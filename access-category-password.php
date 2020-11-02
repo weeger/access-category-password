@@ -148,7 +148,7 @@ if( !function_exists('acpwd_func_password'))  {
 		$options = get_option( 'acpwd_settings_options' );
 		$password = ($options['password'] != '') ? '' : 'acpwdpass' ;
 		/* Echo the field. */ ?>
-		<label for="paswword" > <?php _e( 'Password', 'acpwd' ); ?></label>
+		<label for="password" > <?php _e( 'Password', 'acpwd' ); ?></label>
 		<input type="password" id="limit_true" name="acpwd_settings_options[password]" value="<?php echo $password ?>" />
 		<p class="description">
 		    <?php _e( 'You can type a word or un sentence, no restriction. If not set, the default password is <strong>acpwdpass</strong>.', 'acpwd' ); ?>
